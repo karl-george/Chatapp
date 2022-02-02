@@ -43,6 +43,7 @@ h1 {
 h2 {
   font-size: 5.7rem;
   line-height: 6.9rem;
+  font-weight: 500;
 }
 
 h3 {
@@ -86,6 +87,11 @@ ul {
   font-family: "Roboto", sans-serif;
   line-height: 2.3rem;
   padding: 1.4rem 2.5rem;
+}
+
+.large {
+  width: 18.9rem;
+  padding: 1.6rem 4.8rem;
 }
 
 .btn-white {
@@ -218,4 +224,28 @@ ul {
   .nav-item:last-of-type {
     margin-bottom: 0;
   }
+}
+
+/* Instant Team Chat Block */
+
+.team-chat-block {
+  text-align: center;
+}
+
+.seperator {
+  max-width: 300px;
+  height: 2px;
+  background-color: var(--color-text);
+  margin: 5rem auto;
+}
+
+.team-chat-content {
+  max-width: 763px;
+  margin: 0 auto 5rem;
+  opacity: 0.75;
+}
+
+.screenshot {
+  max-width: 1200px;
+  margin-top: 5rem;
 }
