@@ -45,6 +45,10 @@ h2 {
   line-height: 6.9rem;
 }
 
+h3 {
+  font-size: 2rem;
+}
+
 /* Containers & Grid */
 .outer-container {
   max-width: 1440px;
@@ -52,6 +56,18 @@ h2 {
 
 .inner-container {
   max-width: 1156px;
+}
+
+/* Links & Lists */
+
+a {
+  text-decoration: none;
+  color: var(--color-text);
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
 }
 
 /* Buttons */
@@ -82,6 +98,41 @@ h2 {
   border: 1px solid var(--color-text);
 }
 
-body {
-  background-color: var(--color-accent);
+/* Information Block */
+
+.info-block {
+  cursor: pointer;
+}
+
+.info-content {
+  font-size: 1.8rem;
+  width: 100%;
+  margin: 0;
+}
+
+.collapsible-content {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: all 0.3s;
+}
+
+.collapsible-expanded .collapsible-content {
+  max-height: 100%;
+  opacity: 1;
+}
+
+@media screen and (min-width: 768px) {
+  .info-content {
+    width: auto;
+    display: flex;
+    font-size: 1.8rem;
+    max-height: 100%;
+    opacity: 1;
+  }
+
+  .collapsible-expanded .collapsible-content {
+    max-height: 100%;
+    opacity: 1;
+  }
 }
