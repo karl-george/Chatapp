@@ -1,0 +1,16 @@
+:root {
+  --color-accent: #6cf279;
+  --color-text: #2f3841;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+/* Typography */
+
+html {
+  font-size: 62.5%;
+}
