@@ -95,6 +95,12 @@ h3 {
   }
 }
 
+@media screen and (min-width: 1024px) {
+  .grid-1x5 {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
 /* Links & Lists */
 
 a {
@@ -150,32 +156,6 @@ ul {
   font-size: 1.8rem;
 }
 
-/* Information Block */
-
-/* .info-block {
-  cursor: pointer;
-}
-
-.info-content {
-  font-size: 1.8rem;
-  width: 100%;
-  margin: 0;
-}
-
-
-
-@media screen and (min-width: 768px) {
-  .info-content {
-    width: auto;
-    display: flex;
-    font-size: 1.8rem;
-    max-height: 100%;
-    opacity: 1;
-  }
-
-
-} */
-
 /* Navbar */
 
 .text-logo {
@@ -183,6 +163,10 @@ ul {
   line-height: 4.5rem;
   font-weight: 300;
   margin: 0 0;
+}
+
+.text-logo-green {
+  color: var(--color-accent);
 }
 
 .logo-bold {
@@ -415,3 +399,35 @@ ul {
     font-size: 1.8rem;
   }
 }
+
+/* Footer */
+.footer {
+  margin-top: 15rem;
+}
+
+.info-block {
+  cursor: pointer;
+}
+
+.info-content {
+  font-size: 1.8rem;
+  width: 100%;
+  margin: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .footer {
+    margin-top: 15rem;
+    padding: 2rem;
+  }
+
+  .info-content {
+    width: auto;
+    display: flex;
+    font-size: 1.8rem;
+    max-height: 100%;
+    opacity: 1;
+  }
+}
+
+/* Make the chatapp part of the grid take up more space like 2 grids compared to the others in desktop  */
