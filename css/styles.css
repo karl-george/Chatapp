@@ -1,5 +1,6 @@
 :root {
   --color-accent: #6cf279;
+  --color-accent-transparent: #6cf2792a;
   --color-text: #2f3841;
 }
 
@@ -88,7 +89,7 @@ h3 {
   display: grid;
 }
 
-@media screen and (min-width: 728px) {
+@media screen and (min-width: 768px) {
   .grid-1x2 {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -135,9 +136,13 @@ ul {
   background-color: var(--color-accent);
 }
 
-.btn-outline {
+.btn-outline-filled {
   border: 1px solid var(--color-text);
   background-color: var(--color-accent);
+}
+
+.btn-outline {
+  border: 1px solid var(--color-text);
 }
 
 .btn-nav {
@@ -186,6 +191,10 @@ ul {
 
 .icon {
   max-width: 35px;
+}
+
+.icon-large {
+  max-width: 200px;
 }
 
 .nav {
@@ -352,5 +361,57 @@ ul {
 @media screen and (min-width: 1024px) {
   .hero-btn2 {
     margin-left: 2rem;
+  }
+}
+
+/* Perfect Solution Block */
+
+.background {
+  background-color: var(--color-accent-transparent);
+  padding: 3rem 0;
+}
+
+.team-img-div {
+  margin: 0 auto;
+  max-width: 400px;
+  padding: 2rem;
+}
+
+.team-content-block {
+  text-align: center;
+  padding: 2rem;
+}
+
+.team-content {
+  margin-bottom: 5rem;
+}
+
+.rating-content {
+  display: block;
+}
+
+.team-block {
+  align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+  .team-img-div {
+    max-width: 561px;
+  }
+
+  .team-content-block {
+    text-align: left;
+    max-width: 550px;
+  }
+
+  .team-stars {
+    transform: translateY(10px);
+  }
+
+  .rating-content {
+    display: inline;
+    padding: 1rem;
+    width: 100px;
+    font-size: 1.8rem;
   }
 }
