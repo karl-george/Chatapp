@@ -22,7 +22,7 @@ img {
 body {
   color: var(--color-text);
   line-height: 3.9rem;
-  font-size: 2.3rem;
+  font-size: 2.1rem;
   font-family: "Lato", sans-serif;
 }
 
@@ -36,18 +36,41 @@ h6 {
 }
 
 h1 {
-  font-size: 9rem;
-  line-height: 9.5rem;
+  font-size: 7;
+  line-height: 6rem;
+  font-weight: 500;
 }
 
 h2 {
-  font-size: 5.7rem;
+  font-size: 5rem;
   line-height: 6.9rem;
   font-weight: 500;
 }
 
 h3 {
   font-size: 2rem;
+}
+
+@media screen and (min-width: 1024px) {
+  h1 {
+    font-size: 9rem;
+    line-height: 9.5rem;
+    font-weight: 500;
+  }
+
+  h2 {
+    font-size: 6rem;
+    line-height: 6.9rem;
+    font-weight: 500;
+  }
+
+  h3 {
+    font-size: 2rem;
+  }
+
+  body {
+    font-size: 2.3rem;
+  }
 }
 
 /* Containers & Grid */
@@ -59,6 +82,16 @@ h3 {
 .inner-container {
   max-width: 1156px;
   margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+}
+
+@media screen and (min-width: 728px) {
+  .grid-1x2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 /* Links & Lists */
@@ -104,6 +137,7 @@ ul {
 
 .btn-outline {
   border: 1px solid var(--color-text);
+  background-color: var(--color-accent);
 }
 
 .btn-nav {
@@ -233,16 +267,21 @@ ul {
 }
 
 .seperator {
-  max-width: 300px;
+  max-width: 150px;
   height: 2px;
   background-color: var(--color-text);
-  margin: 5rem auto;
+  margin: 12rem auto 5rem;
+}
+
+.team-chat-title {
+  padding: 2rem;
 }
 
 .team-chat-content {
   max-width: 763px;
   margin: 0 auto 5rem;
   opacity: 0.75;
+  padding: 2rem;
 }
 
 .screenshot {
@@ -252,5 +291,66 @@ ul {
   margin-bottom: 5rem;
 }
 
-@media screen and (min-width: 768px) {
+/* Hero */
+
+.bg-gradient {
+  background: linear-gradient(
+    291.25deg,
+    #6bf178 52.94%,
+    rgba(163, 255, 172, 0.49) 106.42%
+  );
+}
+
+.hero-img {
+  max-width: 400px;
+  margin-bottom: 5rem;
+}
+
+.hero-block {
+  align-items: center;
+  padding: 2rem 5rem;
+  text-align: center;
+}
+
+.hero-content {
+  margin-bottom: 3rem;
+}
+
+.hero-btn2 {
+  margin-left: 2rem;
+  margin-bottom: 8rem;
+}
+
+@media screen and (min-width: 728px) {
+  .hero-img {
+    max-width: 597px;
+  }
+
+  .hero-block {
+    align-items: center;
+    padding: 10rem 5rem;
+    text-align: left;
+  }
+
+  .hero-content {
+    margin-bottom: 5rem;
+  }
+
+  .hero-title {
+    margin-bottom: 3rem;
+  }
+  .hero-btn1 {
+    margin-bottom: 1rem;
+  }
+
+  .hero-btn2 {
+    margin-left: 0;
+    margin-bottom: 8rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .hero-btn2 {
+    margin-left: 2rem;
+  }
 }
