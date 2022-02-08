@@ -142,6 +142,10 @@ ul {
   background-color: var(--color-accent);
 }
 
+.btn-green-light {
+  background-color: var(--color-accent);
+}
+
 .btn-outline-filled {
   border: 1px solid var(--color-text);
   background-color: var(--color-accent);
@@ -149,6 +153,11 @@ ul {
 
 .btn-outline {
   border: 1px solid var(--color-text);
+}
+
+.btn-outline-green {
+  border: 1px solid var(--color-text);
+  background-color: var(--color-accent-transparent);
 }
 
 .btn-nav {
@@ -338,7 +347,7 @@ ul {
 
   .hero-btn2 {
     margin-left: 0;
-    margin-bottom: 8rem;
+    margin-bottom: 6rem;
   }
 }
 
@@ -421,6 +430,19 @@ ul {
     padding: 2rem;
   }
 
+  .footer-logo {
+    padding-top: 1.1rem;
+  }
+
+  .footer-logo-content {
+    font-size: 1.8rem;
+  }
+
+  .info-block {
+    justify-self: center;
+    margin-bottom: 15rem;
+  }
+
   .info-content {
     width: auto;
     display: flex;
@@ -428,6 +450,9 @@ ul {
     max-height: 100%;
     opacity: 1;
   }
-}
 
-/* Make the chatapp part of the grid take up more space like 2 grids compared to the others in desktop  */
+  .footer-copyright {
+    font-size: 1.6rem;
+    margin: 0 0;
+  }
+}
